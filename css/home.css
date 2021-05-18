@@ -1,0 +1,334 @@
+:root{
+    --color-primary: #292929;
+    --color-secondary: #8B8BA5;
+    --color-white : #FFFFFF;
+    --color-yellow : #FFF623;
+    --color-orange : #ffa010;
+}
+
+/* COMPONENT */
+.btn-primary{
+    color: black;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: .5rem 3rem;
+    cursor: pointer;
+    background: linear-gradient(to right, var(--color-yellow), var(--color-orange));
+}
+.heading{
+    text-align: center;
+    padding: 20px 0;
+}
+.heading .sub-title{
+    color: var(--color-secondary);
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+.heading .main-title{
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+
+/* CONTAINER */
+.hero, 
+#about,
+#menu-recommendation,
+#location,
+#footer{
+    padding: 20px 10%;
+}
+
+/* HEADER */
+#header{
+    display: flex;
+    flex-direction: row;
+    min-height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7) ), url('../images/home/landing2.jpg') center / cover no-repeat;
+}
+/* NAVBAR */
+nav{
+    width: 100%;
+    color: white;
+    display: flex;
+    padding: 10px 10%;
+    align-items: center;
+    font-size: 18px;
+    position: fixed;
+    z-index: 10;
+    transition: 0.3s;
+}
+nav .logo{
+    width: 80px;
+    height: 80px;
+}
+nav .links{
+    margin-left: 36px;
+}
+nav .links a{
+    margin: 10px 20px;
+}
+nav .links .active{
+    font-weight: 600;
+}
+nav.scrolled{
+    color: black;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 #8d8d8d33;
+}
+.hamburger{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hamburger span{
+    display: block;
+    width: 40px;
+    height: 4px;
+    margin: 4px;
+    position: relative;
+    background: var(--color-white);
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+}
+
+/* HERO */
+.hero{
+    align-self: center;
+    color: white;
+}
+.hero .title{
+    font-size: 4rem;
+    line-height: 1;
+}
+.hero .text{
+    font-size : 2rem;
+    font-weight: 300;
+}
+.hero .btn-primary{
+    margin-top: 0.5rem;
+}
+
+/* ABOUT */
+#about{
+    padding: 40px inherit;
+}
+.about-content{
+    display: flex;
+}
+.about-content img{
+    width: 22em;
+    border-radius: 5px 5px 80px 5px;
+}
+.about-content .text{
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 18em;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222222;
+    padding: 2rem 3rem;
+    text-align: justify;
+}
+
+/* MENU RECOMMENDATION */
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 20%;
+    padding: 50px 0;
+    text-align: center;
+}
+.card .image{
+    padding: 10px 0 0 10px;
+    margin-bottom: 10px;
+}
+.card .image img{
+    box-shadow: -10px -10px 0 0 #fff82352;
+}
+.card .name{
+    font-size: 20px;
+}
+.card .description{
+    color: var(--color-secondary);
+    font-weight: lighter;
+}
+.card .review{
+    font-size: 20px;
+}
+
+/* LOCATION */
+#location{
+    background-color: var(--color-primary);
+    padding-bottom: 50px;
+}
+#location .heading .sub-title{
+    color: var(--color-secondary);
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+#location .heading .main-title{
+    color: var(--color-white);
+}
+.location-content{
+    display: flex;
+}
+.location-content .text{
+    flex: 1;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 50px;
+    color: white;
+}
+.location-content .text .main-text{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+.location-content .text p{
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+.location-content .text div{
+    margin-top: 0.8rem;
+}
+.location-content .image{
+    flex: 1;
+    border: 8px solid white;
+}
+.location-content .btn-primary{
+    margin-top: 0.5rem;
+}
+
+/* FOOTER */
+#footer{
+    margin-top: 5px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-content .brand{
+    flex: 1;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.footer-content .link{
+    flex: 3;
+    border-left: 1px solid rgb(221, 221, 221);
+    border-right: 1px solid rgb(221, 221, 221);
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.footer-content .contact{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-content .contact img{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+#footer .copyright{
+    font-weight: lighter;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+
+/* TABLET */
+@media screen and (max-width: 969px) {
+    .btn-primary{
+        font-size: 2rem;
+        padding: 1rem 5rem;
+        border-radius: 5px;
+    }
+
+    nav,
+    .hero, 
+    #about,
+    #menu-recommendation,
+    #location,
+    #footer{
+        padding: 20px 5%;
+    }
+    #header{
+        height: 100vh;  
+        min-height: 100vh;
+        display: block;
+    }
+    nav{
+        position: relative;
+    }
+    nav .links{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin-left: 0;
+        background-color: var(--color-primary);
+    }
+    nav.scrolled{   
+        color: white;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .hamburger{
+        display: flex;
+    }
+    .hero{
+        border: 2px solid red;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hero .title{
+        font-size: 6rem;
+    }
+    .hero .text{
+        font-size: 3rem;    
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .btn-primary{
+        font-size: 1.5  rem;
+        padding: 0.5rem 3rem;
+        border-radius: 5px;
+    }
+    
+    nav{
+        justify-content: space-between;
+    }
+    .hero{
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hero .title{
+        font-size: 3rem;
+    }
+    .hero .text{
+        font-size: 1.5rem;    
+    }
+}
+
