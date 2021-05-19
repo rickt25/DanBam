@@ -274,6 +274,7 @@ nav.scrolled{
     }
     nav{
         position: relative;
+        justify-content: space-between;
     }
     nav .links{
         display: flex;
@@ -283,7 +284,14 @@ nav.scrolled{
         top: 0;
         left: 0;
         margin-left: 0;
+        font-size: 2rem;
+        text-align: center;
+        padding: 6rem 0;
+        line-height: 4rem;
         background-color: var(--color-primary);
+    }
+    nav .links a:hover{
+        background-color: rgba(112, 112, 112, 0.384);
     }
     nav.scrolled{   
         color: white;
@@ -294,7 +302,6 @@ nav.scrolled{
         display: flex;
     }
     .hero{
-        border: 2px solid red;
         height: 90%;
         display: flex;
         flex-direction: column;
