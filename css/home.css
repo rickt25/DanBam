@@ -372,7 +372,7 @@ nav.scrolled{
 
 @media screen and (max-width: 480px) {
     .btn-primary{
-        font-size: 1.5  rem;
+        font-size: 1.5rem;
         padding: 0.5rem 3rem;
         border-radius: 5px;
     }
@@ -386,10 +386,32 @@ nav.scrolled{
         justify-content: center;
     }
     .hero .title{
-        font-size: 3rem;
+        font-size: 4rem;
     }
     .hero .text{
-        font-size: 1.5rem;    
+        font-size: 2rem;    
+    }
+
+    .about-content img{
+        width: 80%;
+    }
+    .about-content .text{
+        font-size: 1rem;
+        line-height: 20px;
+        padding: 1rem 2rem;
+        max-height: 12em;
+    }
+
+    .card{
+        width: 80%;
+    }
+
+    .location-content .image{
+        width: 90%;
+    }
+
+    .footer-content{
+        flex-direction: column;
     }
 }
 
