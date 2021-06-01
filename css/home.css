@@ -37,8 +37,7 @@
 .hero, 
 #about,
 #menu-recommendation,
-#location,
-#footer{
+#location{
     padding: 20px 10%;
 }
 
@@ -51,52 +50,7 @@
 }
 /* NAVBAR */
 nav{
-    width: 100%;
-    color: white;
-    display: flex;
-    padding: 10px 10%;
-    align-items: center;
-    font-size: 18px;
     position: fixed;
-    z-index: 10;
-    transition: 0.3s;
-}
-nav .logo{
-    width: 80px;
-    height: 80px;
-}
-nav .links{
-    margin-left: 36px;
-}
-nav .links a{
-    margin: 10px 20px;
-}
-nav .links .active{
-    font-weight: 600;
-}
-nav.scrolled{
-    color: black;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 #8d8d8d33;
-}
-.hamburger{
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.hamburger span{
-    display: block;
-    width: 40px;
-    height: 4px;
-    margin: 4px;
-    position: relative;
-    background: var(--color-white);
-    border-radius: 3px;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
 }
 
 /* HERO */
@@ -212,46 +166,6 @@ nav.scrolled{
     margin-top: 0.5rem;
 }
 
-/* FOOTER */
-#footer{
-    margin-top: 5px;
-    background-color: var(--color-primary);
-    color: var(--color-white);
-}
-.footer-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.footer-content .brand{
-    flex: 1;
-    font-size: 2.4rem;
-    font-weight: bold;
-}
-.footer-content .link{
-    flex: 2;
-    border-left: 1px solid rgb(221, 221, 221);
-    border-right: 1px solid rgb(221, 221, 221);
-    display: flex;
-    justify-content: space-evenly;
-    height: 100%;
-}
-.footer-content .contact{
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-.footer-content .contact img{
-    width: 40px;
-    height: 40px;
-    margin: 0 10px;
-}
-#footer .copyright{
-    font-weight: lighter;
-    padding: 20px 0 10px 0;
-    text-align: center;
-}
-
 /* TABLET */
 @media screen and (max-width: 969px) {
     .btn-primary{
@@ -265,8 +179,6 @@ nav.scrolled{
     .heading .main-title{
         font-size: 2rem;
     }
-
-    nav,
     .hero, 
     #about,
     #menu-recommendation,
@@ -279,39 +191,7 @@ nav.scrolled{
         min-height: 100vh;
         display: block;
     }
-    nav{
-        position: relative;
-        justify-content: space-between;
-    }
-    nav .links{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        width: 100%;
-        top: -100vh;
-        left: 0;
-        margin-left: 0;
-        font-size: 2rem;
-        text-align: center;
-        padding: 6rem 0;
-        line-height: 4rem;
-        background-color: var(--color-primary);
-        transition: 0.5s;
-    }
-    nav .dropdown{
-        top: 0;
-    }
-    nav .links a:hover{
-        background-color: rgba(112, 112, 112, 0.384);
-    }
-    nav.scrolled{   
-        color: white;
-        background-color: transparent;
-        box-shadow: none;
-    }
-    .hamburger{
-        display: flex;
-    }
+    
     .hero{
         height: 90%;
         display: flex;

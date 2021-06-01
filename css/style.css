@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
 
+:root{
+    --color-primary: #292929;
+    --color-secondary: #8B8BA5;
+    --color-white : #FFFFFF;
+    --color-yellow : #FFF623;
+    --color-orange : #ffa010;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -21,4 +29,192 @@ img{
 }
 .unchecked{
     color: rgb(231, 231, 231);
+}
+
+/* NAVBAR */
+nav{
+    width: 100%;
+    color: white;
+    display: flex;
+    padding: 0 10%;
+    align-items: center;
+    font-size: 18px;
+    z-index: 10;
+    transition: 0.3s;
+}
+nav .logo{
+    width: 80px;
+    height: 80px;
+}
+nav .links{
+    margin-left: 36px;
+    transition: 0.1s;
+}
+nav.scrolled, .dropdown{
+    z-index: 10;
+    color: black;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 #8d8d8d33;
+}
+nav.scrolled .arrow-down{
+    border-top: 5px solid var(--color-primary);
+}
+.links ul{
+    display: flex;
+    align-items: center;
+}
+.links ul li{
+    line-height: 15vh;
+    list-style-type: none;
+    position: relative;
+    padding: 0 20px;
+    z-index: 10;
+}
+
+.hamburger{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hamburger span{
+    display: block;
+    width: 40px;
+    height: 4px;
+    margin: 4px;
+    position: relative;
+    background: var(--color-white);
+    border-radius: 3px;
+    z-index: 1;
+}
+.arrow-down{
+    margin-left: 10px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;    
+    border-top: 5px solid white;
+    transition: 0.3s;
+}
+.dropdown-btn a{
+    display: flex;
+    align-items: center;
+}
+.dropdown-btn:hover > .dropdown{
+    margin-top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.links .dropdown{
+    display: block;
+    color: var(--color-primary);
+    position: absolute;
+    left: 0px;
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 20px;
+    transition: 0.2s;
+}
+.links .dropdown li{
+    line-height: normal;
+    list-style-type: none;
+    padding: 15px 40px;
+    display: block;
+    transition: 0.3s;
+}
+.links .dropdown a{
+    display: block;
+}
+.links .dropdown li:hover{
+    background-color: rgb(236, 236, 236);
+}
+
+/* FOOTER */
+
+#footer{
+    padding: 20px 10%;
+    margin-top: 5px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-content .brand{
+    flex: 1;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.footer-content .link{
+    flex: 2;
+    border-left: 1px solid rgb(221, 221, 221);
+    border-right: 1px solid rgb(221, 221, 221);
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.footer-content .contact{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-content .contact img{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+#footer .copyright{
+    font-weight: lighter;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 969px) {
+
+    nav,
+    #footer{
+        padding: 20px 5%;
+    }
+
+    nav{
+        position: relative;
+        justify-content: space-between;
+    }
+    nav .links{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: -100vh;
+        left: 0;
+        margin-left: 0;
+        font-size: 2rem;
+        text-align: center;
+        padding: 6rem 0;
+        line-height: 4rem;
+        background-color: var(--color-primary);
+        transition: 0.5s;
+    }
+    nav .dropdown{
+        top: 0;
+    }
+    nav .links a:hover{
+        background-color: rgba(112, 112, 112, 0.384);
+    }
+    .hamburger{
+        display: flex;
+    }
+    nav.scrolled{
+        color: white;
+    }
+    nav.scrolled .hamburger span{
+        background: var(--color-primary);
+    }
+    nav.scrolled .hamburger .white{
+        color: white;
+        background: var(--color-white);
+    }
+    
+    
+    
 }
