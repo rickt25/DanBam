@@ -70,7 +70,6 @@ nav.scrolled .arrow-down{
     padding: 0 20px;
     z-index: 10;
 }
-
 .hamburger{
     display: none;
     flex-direction: column;
@@ -181,21 +180,26 @@ nav.scrolled .arrow-down{
         justify-content: space-between;
     }
     nav .links{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
         width: 100%;
+        position: absolute;
+        font-size: 2rem;
+        padding: 5rem 0 2rem;
+        margin: 0;
         top: -100vh;
         left: 0;
-        margin-left: 0;
-        font-size: 2rem;
-        text-align: center;
-        padding: 6rem 0;
-        line-height: 4rem;
         background-color: var(--color-primary);
-        transition: 0.5s;
+        overflow: scroll;
+        max-height: 100vh;
+        transition: 0.4s;
     }
-    nav .dropdown{
+    .links ul{
+        flex-direction: column;
+    }
+    .links ul li{
+        line-height: normal;
+        padding: 2rem 0;
+    }
+    nav .show{
         top: 0;
     }
     nav .links a:hover{
@@ -207,6 +211,9 @@ nav.scrolled .arrow-down{
     nav.scrolled{
         color: white;
     }
+    nav.scrolled .arrow-down{
+        border-top: 10px solid var(--color-white);
+    }
     nav.scrolled .hamburger span{
         background: var(--color-primary);
     }
@@ -214,7 +221,39 @@ nav.scrolled .arrow-down{
         color: white;
         background: var(--color-white);
     }
-    
+    .arrow-down{
+        margin-left: 1rem;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;    
+        border-top: 10px solid white;
+        transition: 0.3s;
+    }
+    .dropdown-btn{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .links .dropdown{
+        text-align: center;
+        color: white;
+        position: static;
+        max-height: 0;
+        margin: 0;
+        padding: 0;
+        opacity: 1;
+        visibility: visible;
+        overflow: hidden;
+        background-color: transparent;
+        box-shadow: none;
+        transition: 0.5s;
+    }
+    .links .drop{
+        padding: 20px 0 0;
+        max-height: none;
+    }
+    nav .drop{
+        height: fit-content;
+    }
     
     
 }

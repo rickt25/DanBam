@@ -10,11 +10,11 @@ $(() => {
     })
 
     $(".dropdown-btn").hover(() => {
-        $(".dropdown").toggleClass('show');
+        $(".dropdown").toggleClass('drop');
     })
 
     $(".hamburger").click((e) => {
-        $(".links").toggleClass("dropdown");
+        $(".links").toggleClass("show");
         $(".hamburger span").toggleClass("white");
         e.preventDefault();
     });
