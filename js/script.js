@@ -1,11 +1,11 @@
 $(() => {
     $(document).scroll(function () {
-        $("nav").toggleClass('scrolled', $(this).scrollTop() > 0);
+        $(".navbar").toggleClass('scrolled', $(this).scrollTop() > 0);
     });
 
-    $("nav").hover(() => {
+    $(".navbar").hover(() => {
         if($(this).scrollTop() == 0){
-            $("nav").toggleClass('scrolled');
+            $(".navbar").toggleClass('scrolled');
         }
     })
 

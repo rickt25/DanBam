@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DanBam</title>
-    <link rel="shortcut icon" href="images/icons/logo.png" />
+    <link rel="shortcut icon" href="../images/icons/logo.png" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/about.css">
+    <script src="../js/script.js" defer></script>
 
     <!-- IMPORT -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,34 +20,85 @@
     <header id="header">
         <nav class="scrolled">
             <div class="logo">
-                <img src="../images/icons/logo.png" alt="">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.png" alt="">
+                </a>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown-btn">
+                        <a href="#">Menu<span class="arrow-down"></span></a>  
+                        <ul class="dropdown">
+                            <a href=""><li>Foods</li></a>
+                            <a href=""><li>Drinks</li></a>
+                            <a href=""><li>Deserts</li></a>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
             </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <div class="links">
-                <a href="" class="active">Home</a>
-                <a href="">Menu</a>
-                <a href="">About us</a>
-                <a href="">Location</a>
-                <a href="">Contact us</a>
-            </div>
         </nav>
+        <div class="hero">
+            <h3 class="small-title">About</h3>
+            <h3 class="big-title">DanBam</h3>
+        </div>
     </header>
 
     <main>
-        <section>
+        <section id="history">
+            <img src="../images/about/history.jpg" alt="">
+            <div class="text">
+                <h3>History</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Phasellus rutrum diam in dignissim euismod. Pellentesque 
+                    porta dui at diam tempor imperdiet. Maecenas imperdiet in .
+                </p>
+            </div>
+        </section>
+        <section id="gallery">
+            <img src="../images/about/gallery1.jpg" alt="">
+            <img src="../images/about/gallery2.jpg" alt="">
+            <img src="../images/about/gallery3.jpg" alt="">
+            <img src="../images/about/gallery4.jpg" alt="">
+        </section>
+        <section id="social-media">
+            <div class="title">Social Media</div>
+            <div class="cards">
+                <a class="card">
+                    <img src="../images/about/instagram.png" alt="">
+                    <p>@danbamofficial</p>
+                </a>
+                <a class="card">
+                    <img src="../images/about/facebook.png" alt="">
+                    <p>realdanbam</p>
+                </a>
+                <a class="card">
+                    <img src="../images/about/youtube.png" alt="">
+                    <p>DanBam Official</p>
+                </a>
+            </div>
         </section>
     </main>
 
     <footer id="footer">
         <div class="footer-content">
-            <div class="brand">DanBam</div>
+            <div class="brand">
+                <a href="../index.html">
+                    DanBam
+                </a>
+            </div>
             <div class="link">
-                <a href="">Menu <span><img src="../" alt=""></span></a>
-                <a href="">About Us</a>
+                <a href="">Menu</a>
+                <a href="about.html">About Us</a>
                 <a href="">Location</a>
                 <a href="">Contact Us</a>
             </div>
