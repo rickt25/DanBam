@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanBam</title>
+    <link rel="shortcut icon" href="../images/icons/logo.png" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
+
+    <!-- IMPORT -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js" defer></script>
+    <script src="../js/menu.js" defer></script>
+    
+</head>
+<body>
+
+    <header id="header">
+        <nav class="scrolled">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.png" alt="">
+                </a>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown-btn">
+                        <a href="#">Menu<span class="arrow-down"></span></a>  
+                        <ul class="dropdown">
+                            <a href="?category=food"><li>Foods</li></a>
+                            <a href="?category=drink"><li>Drinks</li></a>
+                            <a href="?category=dessert"><li>Deserts</li></a>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="slideshow">
+            <div class="wrapper">
+                <img src="../images/menu/banner/banner1.png">
+                <img src="../images/menu/banner/banner2.png">
+                <img src="../images/menu/banner/banner3.png">
+            </div>
+            <div class="control">
+                <button class="current"></button>
+                <button></button>
+                <button></button>
+            </div>
+        </section>
+
+        <section id="categories">
+            <div class="item" data-category="food">
+                <p>Foods</p>
+            </div>
+            <div class="item" data-category="drink">
+                <p>Drinks</p>
+            </div>
+            <div class="item" data-category="dessert">
+                <p>Desserts</p>
+            </div>
+        </section>
+
+        <section id="menu">
+            <div class="title">Foods</div>
+            <div class="content">
+                <!-- Append here -->
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="brand">
+                <a href="../index.html">
+                    DanBam
+                </a>
+            </div>
+            <div class="link">
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About Us</a>
+                <a href="location.html">Location</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="contact">
+                <img src="../images/icons/twitter.png" alt="">
+                <img src="../images/icons/instagram.png" alt="">
+                <img src="../images/icons/facebook.png" alt="">
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; DanBam 2021. All rights reserved
+        </div>
+    </footer>
+    
+</body>
+</html>

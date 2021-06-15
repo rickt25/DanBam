@@ -18,4 +18,5 @@ $(() => {
         $(".hamburger span").toggleClass("white");
         e.preventDefault();
     });
+    
 });

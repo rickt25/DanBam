@@ -283,9 +283,5 @@ nav{
     .location-content .image{
         width: 90%;
     }
-
-    .footer-content{
-        flex-direction: column;
-    }
 }
 
