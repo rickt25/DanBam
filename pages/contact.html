@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanBam</title>
+    <link rel="shortcut icon" href="../images/icons/logo.png" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <script src="../js/script.js" defer></script>
+    <script src="../js/contact.js" defer></script>
+   
+
+    <!-- IMPORT -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+</head>
+<body>
+
+    <header id="header">
+        <nav class="scrolled">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.png" alt="">
+                </a>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown-btn">
+                        <a href="#">Menu<span class="arrow-down"></span></a>  
+                        <ul class="dropdown">
+                            <a href=""><li>Foods</li></a>
+                            <a href=""><li>Drinks</li></a>
+                            <a href=""><li>Deserts</li></a>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+       <div class = "content">
+           <div class = "logo">
+                <img src= "../images/icons/logo.png">
+
+           </div>
+        
+           <form class = "form" id ="form">
+               <h2>Contact Us</h2>
+               <div class = "form-control" id = "form-control">
+                   <div class = "input">
+                        <input type ="text" placeholder ="Name" id = "username">
+                    </div>
+                    <i class ="fas fa-check-circle"></i>
+                    <i class ="fas fa-exclamation-circle"></i>
+                    <small>Error Message</small>
+               </div>
+
+               <div class = "form-control" id = "form-control">
+                   <div class ="input">
+                        <input type ="email" placeholder ="Email" id = "email">
+                    </div>
+                    <i class ="fas fa-check-circle"></i>
+                    <i class ="fas fa-exclamation-circle"></i>
+                    <small>Error Message</small>
+                </div>
+                
+                <div class = "form-control" id = "form-control">
+                    <div class ="input" id = "input-gender">
+                        <label>Gender</label>
+                        <input type="radio" id="male" name ="gender" value = "1"/>
+                        <label>Male</label>
+                        <input type="radio" id="female" name = "gender" value ="2"/>
+                        <label>Female</label>   
+                    </div>
+                    <i class ="fas fa-check-circle"></i>
+                    <i class ="fas fa-exclamation-circle"></i>
+                    <small>Error Message</small>
+                </div>
+
+                <div class = "form-control" id = "form-control">
+                    <div class ="input">
+                        <select id = "branch" class = "required">
+                            <option value ="" selected disabled>Branch</option>
+                            <option value ="1">Branch 1</option>
+                            <option value ="2">Branch 2</option>
+                            <option value ="3">Branch 3</option>
+                        </select>
+                    </div>
+                    <i class ="fas fa-check-circle"></i>
+                    <i class ="fas fa-exclamation-circle"></i>
+                    <small>Error Message</small>
+                </div>
+
+                <div class = "form-control" id = "form-control">
+                    <div class ="input">
+                        <input type ="text" placeholder ="Message" id = "messages">
+                    </div>
+                    <i class ="fas fa-check-circle"></i>
+                  <i class ="fas fa-exclamation-circle"></i>
+                    <small>Error Message</small>
+                </div>
+                
+                <div class = "info">
+                    <input type = "checkbox">
+                    <label>Send latest information about DanBam</label>
+                </div>
+                
+                <div class ="submit" id = "submit"> 
+                    <button>Submit</button>
+                </div>
+                <!-- <button>Submit</button> -->
+
+           </form>
+       </div>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="brand">
+                <a href="../index.html">
+                    DanBam
+                </a>
+            </div>
+            <div class="link">
+                <a href="">Menu</a>
+                <a href="about.html">About Us</a>
+                <a href="">Location</a>
+                <a href="">Contact Us</a>
+            </div>
+            <div class="contact">
+                <img src="../images/icons/twitter.png" alt="">
+                <img src="../images/icons/instagram.png" alt="">
+                <img src="../images/icons/facebook.png" alt="">
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; DanBam 2021. All rights reserved
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
+
+
+:root{
+    --color-primary: #292929;
+    --color-secondary: #8B8BA5;
+    --color-white : #FFFFFF;
+    --color-yellow : #FFF623;
+    --color-orange : #ffa010;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-color: #292929;
+    height: 700px;
+}
+
+.content{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.content .logo{ 
+    margin-left: 30px;
+    height: 30%;
+    width:30%; 
+    transform: rotate(20deg);
+    opacity: 0.5;
+}
+
+.form h2{
+    margin: 0;
+    top :5px;
+}
+
+.form{
+    margin-left: 10px;
+    margin-top: 30px;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    width: 600px;
+    height: 540px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+}
+
+.form-control{  
+    position: relative;
+    font-size: 15px;
+}
+
+input{
+    border: none;
+}
+
+.input{
+    border: none;
+    
+}
+.form-control .input{
+    border: none;
+    border-bottom: 2px solid #777777;   
+    width: 95%;
+}
+
+.form-control input{
+    font-family: inherit;
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+.input select{
+    padding: 10px;
+    color :#777777;
+    border: none;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    width: 100%;
+}
+
+#input-gender{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    width: 95%;
+    border: none;
+    border-bottom: 2px solid #777777; 
+}
+
+#input-gender label{
+    color: #777777;
+    margin-right: 5.75rem;
+}
+
+.info{
+    color : #777777;
+    font-size: 15px;
+    padding :10px
+}
+
+.submit button{
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #292929;
+    color: #777777;
+    width: 95%;
+}
+
+.submit button:hover{
+    background: #777777;
+    color: #000000;
+}
+
+.form-control i{
+    visibility: hidden;
+    position: absolute;
+    top: 10px; 
+    right :10px
+}
+
+.form-control small{
+    visibility: hidden;
+    left: 0;
+    bottom: 0
+}
+
+.form-control.success i.fa-check-circle{
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.form-control.error i.fa-exclamation-circle{
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.form-control.error small{
+    margin-left: 10px;
+    visibility: visible;
+    color: #e74c3c;
+}
+
+@media screen and (max-width: 969px) {
+    .content .logo{
+        visibility: hidden;
+        display: none;
+    }
+} 
+
+@media screen and (max-width: 480px) {
+    .form{
+        width:400px;
+    }
+
+    #input-gender label{
+        margin-right: 0.5rem;
+    }
+} 
