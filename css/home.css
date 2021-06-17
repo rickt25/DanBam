@@ -6,18 +6,6 @@
     --color-orange : #ffa010;
 }
 
-/* COMPONENT */
-.btn-primary{
-    color: black;
-    border: none;
-    border-radius: 2px;
-    text-align: center;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    padding: .5rem 3rem;
-    cursor: pointer;
-    background: linear-gradient(to right, var(--color-yellow), var(--color-orange));
-}
 .heading{
     text-align: center;
     padding: 20px 0;

@@ -4,7 +4,7 @@
     --color-primary: #292929;
     --color-secondary: #8B8BA5;
     --color-white : #FFFFFF;
-    --color-yellow : #FFF623;
+    --color-yellow : #fffff4;
     --color-orange : #ffa010;
 }
 
@@ -125,6 +125,20 @@ nav.scrolled .arrow-down{
     background-color: rgb(236, 236, 236);
 }
 
+/* COMPONENT */
+
+.btn-primary{
+    color: black;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: .5rem 3rem;
+    cursor: pointer;
+    background: linear-gradient(to right, var(--color-yellow), var(--color-orange));
+}
+
 /* FOOTER */
 
 #footer{
@@ -157,7 +171,7 @@ nav.scrolled .arrow-down{
     justify-content: flex-end;
 }
 .footer-content .contact img{
-    width: 40px;
+    width: auto;
     height: 40px;
     margin: 0 10px;
 }

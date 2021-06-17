@@ -43,11 +43,11 @@
     word-wrap: break-word;
     max-height: 10.5em;
 }
-#history .text h3{
+#history .text h1{
     font-size: 40px;
     position: relative;
 }
-#history .text h3::before{
+#history .text h1::before{
     content: "";
     width: 100px;
     height: 10px;
