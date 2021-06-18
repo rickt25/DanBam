@@ -161,7 +161,7 @@ const renderMenu = (category) => {
                 </div>
             </div>
         `
-        $("#menu .content").append(element);
+        $(element).hide().appendTo("#menu .content").fadeIn(500);
     })
 }
 

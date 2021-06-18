@@ -69,15 +69,13 @@ header {
 #categories{
     padding: 0 10%;
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #categories .item{
-    width: 330px;
+    width: 32%;
     height: 180px;
     display: flex;
-    margin: 0 10px;
     margin-bottom: 20px;
     justify-content: center;
     align-items: center;
@@ -168,6 +166,9 @@ header {
 @media screen and (max-width: 875px){
     #slideshow {
         margin: 0 0 2rem 0;
+    }
+    #categories{
+        flex-direction: column;
     }
     #categories .item{
         width: 100%;
