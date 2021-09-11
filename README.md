@@ -1,5 +1,5 @@
 # DanBam
 Laboratory Assignment.
 
-# Visit Website
+## Visit Website
 https://danbam.netlify.app
